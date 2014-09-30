@@ -1,0 +1,25 @@
+{
+    "name": "Markdown 4 What!?",
+    "description": "Markdown support for Facebook",
+    "version": "0.0.1",
+    "author": "@nealrs",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.facebook.com/*",
+                "http://*.facebook.com/*"
+            ],
+            "js": [
+                "js/jquery.js",
+                "js/script.js",
+                "js/marked.min.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "icons": {
+        "128": "images/md.png"
+    }
+}
